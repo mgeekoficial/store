@@ -7,7 +7,7 @@
 		private $defaults = [
 			"data"=>[]
 		];
-		public function __contruct($opts = array()){
+		public function __construct($opts = array()){
 			
 			$this->options = array_merge($this->defaults, $opts);
 

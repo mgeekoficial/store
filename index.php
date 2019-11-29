@@ -2,9 +2,9 @@
 
 require_once("vendor/autoload.php");
 
-//use \Slim\Slim;
-use \mgeekoficial\Page;
-$app = new \Slim\Slim();
+use \Slim\Slim;
+use mgeekoficial\Page;
+$app = new Slim();
 
 $app->config('debug', true);
 
