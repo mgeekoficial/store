@@ -6,8 +6,18 @@ namespace Composer\Autoload;
 
 class ComposerStaticInit527aa13e2ed4f223006675a9d13c858f
 {
-    public static $fallbackDirsPsr4 = array (
-        0 => __DIR__ . '/..' . '/mgeekoficial/php-classes/src',
+    public static $prefixLengthsPsr4 = array (
+        'm' => 
+        array (
+            'mgeekoficial\\' => 13,
+        ),
+    );
+
+    public static $prefixDirsPsr4 = array (
+        'mgeekoficial\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/mgeekoficial/php-classes/src',
+        ),
     );
 
     public static $prefixesPsr0 = array (
@@ -41,7 +51,8 @@ class ComposerStaticInit527aa13e2ed4f223006675a9d13c858f
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
-            $loader->fallbackDirsPsr4 = ComposerStaticInit527aa13e2ed4f223006675a9d13c858f::$fallbackDirsPsr4;
+            $loader->prefixLengthsPsr4 = ComposerStaticInit527aa13e2ed4f223006675a9d13c858f::$prefixLengthsPsr4;
+            $loader->prefixDirsPsr4 = ComposerStaticInit527aa13e2ed4f223006675a9d13c858f::$prefixDirsPsr4;
             $loader->prefixesPsr0 = ComposerStaticInit527aa13e2ed4f223006675a9d13c858f::$prefixesPsr0;
             $loader->classMap = ComposerStaticInit527aa13e2ed4f223006675a9d13c858f::$classMap;
 
